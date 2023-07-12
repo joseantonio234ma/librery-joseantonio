@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+/* configuracion de constante  */
+
+:root{
+
+    /* colores */
+    --colorEncabeazdo:#5b139b;
+    --colorPie:#294582;
+    --colorEnlace:#e6e3f0;
+    --colorEnlaceSobre:#c51717;
+    /* fuentes */
+
+    ---texto:font-family: 'Open Sans', sans-serif;
+
+}
+
+/*   utilizar el selector universal que es (*) */
+
+*{
+    box-sizing: border-box;
+}
+
+/* aplicar estilo a las clase .home-wrapper  no se puede escribir la palabras class   */
+
+
+.home-wrapper{
+    /* imagen de fondo */
+   background-image: url(../image/libros\ pp.jpg);
+   /*tamaño de la imagen de fondo */
+   background-size: cover;
+}
+
+
+/* aplicar estilo al encabezado que es selector de etiquetas en css*/
+
+header{
+/* ancho */
+
+width: 100;
+
+/* color de fondo*/
+
+background-color: var(--colorEncabeazdo);
+/* pocisiones del encabezado  fijo */
+position: fixed;
+/* espaciados*/
+padding: 10px 0;
+margin-top: -40 px;
+}
+
+/*dimensionar el tamaño del logo 
+combinar selectores de etiquetas css*/
+
+header img{
+    width: 100 px;
+}
+
+/* pocisionar  el menu de navegaciones este en la derecha*/
+
+header nav{
+    float: right;
+    /* margen  arriba*/
+    margin-top: 50px;
+    
+}
+
+/* aplicar estilos  a los enlaces*/
+
+
+header nav a{
+    color: var(--colorEnlace);
+    /* quitar el sudrayado*/
+
+    text-decoration: none;
+    margin-left: 6px;
+    font-family: var(---texto);
+    font-size: 1.3 ;
+    ;
+}
+
+/*  estilos a los enlances el estados (hover ) */
+
+header nav a:hover{
+    color: var(--colorEnlaceSobre);
+    font-weight: bold;
+   }
+
+
+/* estilos para la seccion promocion */
+
+#promocion{
+   text-align: center;
+   padding: 250px 0 250px;
+   background-repeat: fixed;
+}
+
+/*estilo al h1 de la seccion promocion*/
+#promocion h1{
+    font-size: 2.5 rem;
+    color : var(--colorEncabeazdo);
+    font-weight: bold;
+
+}
+
+/*esitlos a la p de la seccion promocion*/
+
+#promocion p{
+    font-size: 1.2 rem;
+    color: var(--colorEncabeazdo);
+    margin-top: 20px ;
+    font-weight: 700;
+}
+
+/* esitlos a la clase container */
+
+.conteiner{
+    width:100px ;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+#novedades .box{
+    display:inline-block ;
+    width: 50%;
+    padding: 8px;
+}
+
+#novedades .box img{
+    width:100%;
+    height: 400px;
+}
+
+#novedades .box3{
+   text-align: center; 
+}
+
+/* secciond de categoria */
+
+#categoria .box{
+    display: inline-block;
+    width: 33%;
+    padding: 8px;
+}
+
+#categoria .box img{
+    width: 100%;
+    height: 300px;
+}
+
+#categoria .boxh3{
+    text-align: center;
+}
+
+/* estilos a las secciones o secion*/
+
+section{
+    padding: 120px 0;
+}
+
+section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* seccion contacto*/
+#contacto{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #294582;
+    background-image: url(../image/libros\ pp.jpg)
+}
+
+#contacto h2,label{
+    color: #e6e3f0;
+    width: 100%;
+}
+
+#contacto input,
+textarea{
+
+    width: 600px;
+    border-radius: 10 px;
+    padding: 10px 5px;
+}
+
+/* footer- pie de paguina*/
+
+footer{
+    width: 100;
+    padding: 20px 0;
+    color: #e6e3f0;
+    background-color: var(--colorPie);
+    text-align: center;
+}
+
+iframe{
+    width: 600px !important;
+    height: 600px !important;
+    margin: 0 auto;
+
+}
